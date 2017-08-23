@@ -1,0 +1,30 @@
+{
+  "name": "ASU AutoEnroll",
+  "version": "1.0",
+  "description": "Add the class, get to 'finish enrolling' page and extension will keep submitting until you get the class",
+  "background": {
+    "page" : "background.html",
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon.ico",
+    "default_title" : "Looking to autosubmit your classes!"
+  },
+  "permissions" : [
+    "declarativeContent", "alarms", "tabs", "storage"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.oasis.asu.edu/*"],
+      "run_at": "document_end",
+      "js": ["hello.js"]
+    }
+  ],
+   "web_accessible_resources": ["script.js"],
+  "manifest_version": 2
+}
