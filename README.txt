@@ -1,5 +1,6 @@
+#Autoenroll
 
-This plugin will autosubmit the form located at 
+In 2017, this Chrom Extension would autosubmit the cart until accepted by the PS system for ASU.
 
 Steps
 1) Install this extension manually (search for instructions on Internet)
